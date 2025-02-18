@@ -45,7 +45,7 @@ jobs:
           git config user.email "action@github.com"
           git add .
           git commit -m "Deploy from b-log_frontend commit: ${{ github.sha }}"
-          git push
+          git push "https://${{ github.actor }}:${{ secrets.DEPLOY_TOKEN }}@github.com/bmc-00/bmc-00.github.io.git" HEAD:main
         env:
           # 깃푸시 권한을 위해서, HTTPS URL로 인증하도록 user:token 형식 사용
           # https://username:token@github.com/...

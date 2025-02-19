@@ -27,11 +27,7 @@
 
       <!-- 메인 컨텐츠 -->
       <main class="content">
-        <h2>Latest Posts</h2>
-        <div class="post" v-for="i in 5" :key="i">
-          <h3>Post Title {{ i }}</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        </div>
+        콘텐츠가 이쪽에 표시됨😀
       </main>
 
       <!-- 오른쪽 사이드바 (넓을 때만 보임) -->

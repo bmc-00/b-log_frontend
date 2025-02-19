@@ -5,7 +5,7 @@
       <button class="menu-btn" @click="toggleMobileMenu">
         ☰
       </button>
-      <h1 class="blog-title">My Blog</h1>
+      <h1 class="blog-title">B-log</h1>
     </header>
 
     <!-- 모바일 사이드바 (팝업) -->
@@ -83,6 +83,7 @@ const toggleMobileMenu = () => {
   justify-content: space-between;
   background-color: #333;
   color: #fff;
+  padding-right: 20px;
 }
 
 .menu-btn {

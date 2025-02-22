@@ -2,9 +2,9 @@
   <div class="layout">
     <!-- 모바일용 햄버거 메뉴 -->
     <header class="mobile-header" v-if="isMobile">
-      <button class="menu-btn" @click="toggleMobileMenu">
+      <div class="menu-btn" @click="toggleMobileMenu">
         ☰
-      </button>
+      </div>
       <h1 class="blog-title">B-log</h1>
     </header>
 
@@ -93,6 +93,7 @@ const toggleMobileMenu = () => {
   font-size: 25px;
   color: #1E2A38;
   cursor: pointer;
+  padding-left: 5px;
 }
 
 .blog-title {

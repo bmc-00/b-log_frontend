@@ -10,13 +10,13 @@ const error = ref(null);
 // API에서 데이터 가져오기
 const fetchPosts = async () => {
   try {
-    const response = await axios.get('http://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/posts'); // API URL 수정
+    const response = await axios.get('https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/posts'); // API URL 수정
     console.log(response.data);
     posts.value = response.data.map((post) => ({
       id: post.id,
       title: post.title,
       description: post.content.substring(0, 100) + '...', // 설명을 100자까지만 표시
-      image: '/images/placeholder.webp' || 'https://via.placeholder.com/600/92c952', // 기본 이미지 제공
+      image: post.imageUrl || '/images/placeholder.webp' , // 기본 이미지 제공
       date: post.createdAt.split('T')[0], // 날짜 형식 변환 (YYYY-MM-DD)
       category: post.category,
       author: 'BMC'

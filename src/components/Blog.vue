@@ -170,6 +170,7 @@ const toggleMobileMenu = () => {
   background: none;
   font-size: 1.2rem;
   cursor: pointer;
+  color: #1E2A38;
 }
 
 /* 반응형 스타일 */
@@ -190,7 +191,7 @@ const toggleMobileMenu = () => {
     display: none;
   }
   .menu-btn {
-    display: inline-block;
+    display: flex;
   }
 }
 

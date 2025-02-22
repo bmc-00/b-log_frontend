@@ -2,12 +2,13 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import Home from './components/Home.vue'
-const About = { template: `Hello About Page` }
+import Post from './components/Post.vue'
+import About from './components/About.vue'
 
-// 📌 Vue Router 설정
 const routes = [
   { path: '/', component: Home },
-  { path: '/about', component: About }
+  { path: '/about', component: About },
+  { path: '/posts/:id', component: Post, props: true }  //props로 id번호를 전달
 ]
 
 const router = createRouter({

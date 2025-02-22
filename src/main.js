@@ -1,5 +1,20 @@
 import { createApp } from 'vue'
-import './style.css'
+import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
+import Home from './components/Home.vue'
+const About = { template: `Hello About Page` }
 
-createApp(App).mount('#app')
+// 📌 Vue Router 설정
+const routes = [
+  { path: '/', component: Home },
+  { path: '/about', component: About }
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
+
+const app = createApp(App)
+app.use(router) // Vue Router 등록
+app.mount('#app')

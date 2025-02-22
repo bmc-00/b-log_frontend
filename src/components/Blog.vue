@@ -27,7 +27,7 @@
 
       <!-- 메인 컨텐츠 -->
       <main class="content">
-        콘텐츠가 이쪽에 표시됨😀
+        <RouterView/>
       </main>
 
       <!-- 오른쪽 사이드바 (넓을 때만 보임) -->
@@ -40,6 +40,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { RouterView } from 'vue-router'
 import ProfileSidebar from './ProfileSidebar.vue'
 import TrendingSidebar from './TrendingSidebar.vue'
 
@@ -81,16 +82,16 @@ const toggleMobileMenu = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
-  color: #fff;
-  padding-right: 20px;
+  background-color: white;
+  color: #1E2A38;
+  padding: 5px 20px 5px 10px;
 }
 
 .menu-btn {
   background: none;
   border: none;
-  font-size: 1.5rem;
-  color: white;
+  font-size: 25px;
+  color: #1E2A38;
   cursor: pointer;
 }
 
@@ -109,7 +110,7 @@ const toggleMobileMenu = () => {
 
 /* 사이드바 기본 스타일 */
 .sidebar {
-  background-color: #f8f9fa;
+  background-color: rgb(255, 250, 250);
   border-radius: 5px;
   width: 300px;
 }
@@ -130,6 +131,7 @@ const toggleMobileMenu = () => {
   background-color: #fff;
   border-radius: 5px;
   flex-grow: 1;
+  overflow: auto;
 }
 
 /* 포스트 스타일 */
@@ -146,7 +148,6 @@ const toggleMobileMenu = () => {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -155,15 +156,16 @@ const toggleMobileMenu = () => {
 
 .mobile-sidebar {
   width: 250px;
-  height: 100vh;
-  background: #fff;
-  padding: 1rem;
+  height: 100%;
+  background: rgb(255, 250, 250);
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .close-btn {
   align-self: flex-end;
+  padding-top: 20px;
   border: none;
   background: none;
   font-size: 1.2rem;

@@ -70,7 +70,7 @@
   // ✅ API에서 댓글 불러오기
   const fetchComments = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/api/comments?postId=${props.postId}`);
+      const response = await axios.get(`https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/comments?postId=${props.postId}`);
       comments.value = response.data;
     } catch (err) {
       console.error("댓글을 불러오는 중 오류 발생:", err);
@@ -96,7 +96,7 @@
   
     loading.value = true;
     try {
-      await axios.post("http://localhost:8080/api/comments", {
+      await axios.post("https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/comments", {
         postId: props.postId,
         author: newComment.value.author,
         passwordHash: newComment.value.password,
@@ -116,7 +116,7 @@
   // ✅ 댓글 삭제 (비밀번호 확인 후 삭제)
   const deleteComment = async (commentId, password) => {
     try {
-      await axios.delete(`http://localhost:8080/api/comments/${commentId}?passwordHash=${password}`);
+      await axios.delete(`https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/comments/${commentId}?passwordHash=${password}`);
       alert("댓글이 삭제되었습니다.");
       fetchComments(); // 댓글 다시 불러오기
     } catch (err) {
@@ -152,7 +152,6 @@
   .comment-section {
     margin: auto;
     padding: 20px;
-    margin-bottom: 20px;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -306,6 +305,7 @@
     margin: 5px;
     padding: 2px;
     border: none; /* 기본 테두리 제거 */
+    border-radius: 0px;
     border-bottom: 1px solid rgb(255,210,210); /* 아래쪽 테두리만 표시 */
 }
 
@@ -319,7 +319,7 @@
     padding: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: 3px;
     height: 100px;
     width: 100%;
     border: 1px solid rgb(255,210,210); /* 아래쪽 테두리만 표시 */

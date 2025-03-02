@@ -36,7 +36,7 @@ renderer.image = (href, title, text) => {
   // ✅ API에서 데이터 불러오기
   const fetchPost = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/api/posts/${props.id}`);
+      const response = await axios.get(`https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/posts/${props.id}`);
       post.value = response.data;
     } catch (err) {
       error.value = "데이터를 불러오는 중 문제가 발생했습니다.";

@@ -1,12 +1,14 @@
 <template>
   <div class="layout">
     <!-- 모바일용 햄버거 메뉴 -->
-    <header class="mobile-header" v-if="isMobile">
-      <div class="menu-btn" @click="toggleMobileMenu">
-        ☰
+    <div class="mobile-header" v-if="isMobile">
+      <div style="display:flex; gap: 10px; width: 100%; margin-left: 10px;">
+        <div class="menu-btn" @click="toggleMobileMenu">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+        <div class="blog-title">B-log</div>
       </div>
-      <h1 class="blog-title">B-log</h1>
-    </header>
+    </div>
 
     <!-- 모바일 사이드바 (팝업) -->
     <Transition name="slide">
@@ -79,12 +81,15 @@ const toggleMobileMenu = () => {
 
 /* 모바일 헤더 */
 .mobile-header {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: white;
   color: #1E2A38;
-  padding: 5px 20px 5px 10px;
+  padding: 5px 0 5px 0;
+  z-index: 10;
+  width: 100%;
 }
 
 .menu-btn {

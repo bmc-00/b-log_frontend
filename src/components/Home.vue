@@ -65,7 +65,7 @@ onMounted(fetchPosts);
 .container {
   max-width: 700px;
   margin: auto;
-  padding: 0px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 .title {

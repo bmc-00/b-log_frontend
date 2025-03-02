@@ -151,10 +151,7 @@
   /* ✅ 전체 댓글 섹션 */
   .comment-section {
     margin: auto;
-    padding: 20px;
     background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
   }
   

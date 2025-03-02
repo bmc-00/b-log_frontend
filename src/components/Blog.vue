@@ -111,9 +111,10 @@ const toggleMobileMenu = () => {
 
 /* 사이드바 기본 스타일 */
 .sidebar {
-  background-color: rgb(255, 250, 250);
+  background-color: rgb(255, 245, 245);
   border-radius: 5px;
   width: 300px;
+  min-width: 300px;
 }
 
 /* 왼쪽 사이드바 */
@@ -124,6 +125,7 @@ const toggleMobileMenu = () => {
 /* 오른쪽 사이드바 (넓을 때만 보임) */
 .right-sidebar {
   grid-column: 3;
+  background-color: rgb(255,255,255);
 }
 
 /* 메인 컨텐츠 */
@@ -158,7 +160,7 @@ const toggleMobileMenu = () => {
 .mobile-sidebar {
   width: 250px;
   height: 100%;
-  background: rgb(255, 250, 250);
+  background: rgb(255, 245, 245);
   padding: 20px;
   display: flex;
   flex-direction: column;

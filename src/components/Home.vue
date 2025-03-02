@@ -15,7 +15,7 @@ const fetchPosts = async () => {
     posts.value = response.data.map((post) => ({
       id: post.id,
       title: post.title,
-      description: post.content.substring(0, 100) + '...', // 설명을 100자까지만 표시
+      description: post.summary,
       image: post.imageUrl || '/images/placeholder.webp' , // 기본 이미지 제공
       date: post.createdAt.split('T')[0], // 날짜 형식 변환 (YYYY-MM-DD)
       category: post.category,
@@ -32,7 +32,6 @@ const fetchPosts = async () => {
 // 컴포넌트가 마운트될 때 데이터 불러오기
 onMounted(fetchPosts);
 </script>
-📚
 <template>
   <div class="container">
     <h1 class="title">All Posts</h1>
@@ -45,12 +44,14 @@ onMounted(fetchPosts);
         <RouterLink :to="`/posts/${post.id}`">
           <img :src="post.image" alt="Post Image" class="card-img">
           <div class="card-content">
-            <h2 class="card-title">{{ post.title }}</h2>
-            <p class="card-description">{{ post.description }}</p>
+            <div class="category">
+                <div class="category-content"> {{post.category }}</div>
+            </div>
+            <div class="card-title">{{ post.title }}</div>
+            <div class="card-description">{{ post.description }}</div>
             <div class="card-footer">
-              <span class="category">📚 {{ post.category }}</span>
               <span class="author">{{ post.author }}</span>
-              <span class="date">📅 {{ post.date }}</span>
+              <span class="date">{{ post.date }}</span>
             </div>
           </div>
         </RouterLink>
@@ -71,7 +72,7 @@ onMounted(fetchPosts);
   font-size: 24px;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #333;
 }
 
@@ -114,7 +115,7 @@ onMounted(fetchPosts);
 /* 카드 이미지 */
 .card-img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -126,12 +127,13 @@ onMounted(fetchPosts);
 .card-title {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
   color: #222;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .card-description {
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
   margin-bottom: 15px;
 }
@@ -140,18 +142,27 @@ onMounted(fetchPosts);
 .card-footer {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 11px;
   color: #888;
-  gap: 5px;
+  gap: 2px;
 }
 
 .category {
-  font-size: 12px;
+  display: flex;
+  margin-top: 10px;
+  font-size: 13px;
   color: #555;
   font-weight: bold;
 }
+
+.category-content{
+    background-color: rgb(225, 225, 255);
+    padding: 3px 7px 3px 7px;
+    border-radius: 16px;
+}
+
 .author {
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .date {

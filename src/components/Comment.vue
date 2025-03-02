@@ -19,7 +19,7 @@
           </button>
         </div>
       </div>
-      <p v-else class="no-comments">댓글이 없습니다.</p>
+      <p v-else class="no-comments">댓글이 없습니다. 😭</p>
       
       <!-- ✅ 이모지 픽커 (댓글 위에 오버레이) -->
     <div v-if="showEmojiPicker" class="emoji-picker-overlay" @click.self="toggleEmojiPicker">

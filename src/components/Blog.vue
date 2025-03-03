@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <!-- 모바일용 햄버거 메뉴 -->
-    <div class="mobile-header" v-if="isMobile">
+    <div class="mobile-header" v-if="!isWide">
       <div style="display:flex; gap: 10px; width: 100%; margin-left: 10px;">
         <div class="menu-btn" @click="toggleMobileMenu">
             <span class="material-symbols-outlined">menu</span>
@@ -12,7 +12,7 @@
 
     <!-- 모바일 사이드바 (팝업) -->
     <Transition name="slide">
-      <div v-if="isMobile && mobileMenuOpen" class="mobile-sidebar-overlay" @click.self="toggleMobileMenu">
+      <div v-if="!isWide && mobileMenuOpen" class="mobile-sidebar-overlay" @click.self="toggleMobileMenu">
         <aside class="sidebar mobile-sidebar">
           <button class="close-btn" @click="toggleMobileMenu">✕</button>
           <ProfileSidebar />
@@ -23,7 +23,7 @@
     <!-- 메인 컨테이너 -->
     <div class="main-container">
       <!-- 왼쪽 사이드바 (넓거나 중간일 때 보임) -->
-      <aside class="sidebar left-sidebar" v-if="!isMobile">
+      <aside class="sidebar left-sidebar" v-if="isWide">
         <ProfileSidebar />
       </aside>
 
@@ -32,10 +32,6 @@
         <RouterView/>
       </main>
 
-      <!-- 오른쪽 사이드바 (넓을 때만 보임) -->
-      <aside class="sidebar right-sidebar" v-if="isWide">
-        <TrendingSidebar />
-      </aside>
     </div>
   </div>
 </template>
@@ -44,17 +40,14 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { RouterView } from 'vue-router'
 import ProfileSidebar from './ProfileSidebar.vue'
-import TrendingSidebar from './TrendingSidebar.vue'
 
 // 화면 크기 감지
-const isWide = ref(window.innerWidth >= 1200)
-const isMobile = ref(window.innerWidth < 768)
+const isWide = ref(window.innerWidth >= 900)
 const mobileMenuOpen = ref(false)
 
 // 창 크기 변경 감지
 const updateLayout = () => {
-  isWide.value = window.innerWidth >= 1200
-  isMobile.value = window.innerWidth < 768
+  isWide.value = window.innerWidth >= 900
 }
 
 onMounted(() => {
@@ -87,7 +80,7 @@ const toggleMobileMenu = () => {
   justify-content: space-between;
   background-color: white;
   color: #1E2A38;
-  padding: 5px 0 5px 0;
+  padding: 10px 0 10px 0;
   z-index: 10;
   width: 100%;
 }
@@ -116,7 +109,7 @@ const toggleMobileMenu = () => {
 
 /* 사이드바 기본 스타일 */
 .sidebar {
-  background-color: rgb(255, 245, 245);
+  background-color: rgb(245, 245, 255);
   border-radius: 5px;
   width: 300px;
   min-width: 300px;
@@ -165,7 +158,7 @@ const toggleMobileMenu = () => {
 .mobile-sidebar {
   width: 250px;
   height: 100%;
-  background: rgb(255, 245, 245);
+  background: rgb(245, 245, 255);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -179,28 +172,6 @@ const toggleMobileMenu = () => {
   font-size: 1.2rem;
   cursor: pointer;
   color: #1E2A38;
-}
-
-/* 반응형 스타일 */
-@media (max-width: 1199px) {
-  .main-container {
-    grid-template-columns: 1fr 1fr;
-  }
-  .right-sidebar {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .main-container {
-    grid-template-columns: 1fr;
-  }
-  .left-sidebar {
-    display: none;
-  }
-  .menu-btn {
-    display: flex;
-  }
 }
 
 /* 모바일 메뉴 애니메이션 */

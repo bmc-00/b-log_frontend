@@ -1,11 +1,16 @@
 <template>
+    <div class="image-container">
+        <img v-if="post.imageUrl" :src="post.imageUrl" class="post-image" alt="Post Image" />
+        
+        <div class="text-overlay">
+            <h1 class="post-title">{{ post.title }}</h1>
+            <p class="post-meta">
+                <span class="category">{{ post.category }}</span> |
+                <span class="date">{{ formattedDate }}</span>
+            </p>
+        </div>
+    </div>
     <div class="container">
-      <h1 class="post-title">{{ post.title }}</h1>
-      <p class="post-meta">
-        <span class="category">{{ post.category }}</span> |
-        <span class="date">{{ formattedDate }}</span>
-      </p>
-  
       <div v-html="renderedMarkdown" class="post-content"></div>
 
     <Comment :postId="id" />
@@ -82,20 +87,21 @@ const highlightCode = () => {
   
   /* 제목 스타일 */
   .post-title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 5px;
   }
   
   .post-meta {
     font-size: 14px;
-    color: #888;
+    color: white;
+    font-weight: lighter;
   }
   
   /* 카테고리 스타일 */
   .category {
-    font-weight: bold;
-    color: #d9534f;
+    font-weight: lighter;
+    color: white;
   }
   
   /* 본문 스타일 */
@@ -108,15 +114,44 @@ const highlightCode = () => {
     border-radius: 10px;
   }
   
-  /* 이미지 스타일 */
-  .post-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
+  .image-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ✅ 검은색 오버레이 */
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 검은색 반투명 */
+}
+
+/* ✅ 이미지 중앙 텍스트 */
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  z-index: 10; /* 오버레이보다 위에 위치 */
+}
+
   /* Markdown 내부 스타일링 */
   .post-content h2 {
     font-size: 22px;

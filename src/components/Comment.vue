@@ -30,7 +30,7 @@
       <div class="comment-form">
         <!-- ✅ 이모지 선택 버튼 -->
         <div style="display: flex; width: 100%;">
-            <div class="profile" style="border: 1px solid rgb(255,230,230); cursor:pointer;" @click="toggleEmojiPicker">
+            <div class="profile" style="border: 0.5px solid grey; cursor:pointer;" @click="toggleEmojiPicker">
             {{ newComment.profileEmoji || "😀" }}
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -145,7 +145,7 @@
   <style scoped>
 .material-symbols-outlined {
     font-size: 17px;
-    color: rgb(169, 64, 64);
+    color: rgb(100,100,255);
 }
 
   /* ✅ 전체 댓글 섹션 */
@@ -177,7 +177,7 @@
   .comment {
     display: flex;
     align-items: center;
-    background: rgb(255, 249, 249);
+    background: rgb(249, 249, 255);
     padding: 15px;
     border-radius: 8px;
     position: relative;
@@ -303,13 +303,13 @@
     padding: 2px;
     border: none; /* 기본 테두리 제거 */
     border-radius: 0px;
-    border-bottom: 1px solid rgb(255,210,210); /* 아래쪽 테두리만 표시 */
+    border-bottom: 0.5px solid grey; /* 아래쪽 테두리만 표시 */
 }
 
 /* 포커스 시 스타일 */
 .input-idpw:focus{
   outline: none; /* 기본 테두리 제거 */
-  border-bottom: 1px solid rgb(169, 64, 64) /* 포커스 시 색 변경 */
+  border-bottom: 0.5px solid rgb(156, 26, 171) /* 포커스 시 색 변경 */
 }
 
 .input-content{
@@ -319,13 +319,13 @@
     border-radius: 3px;
     height: 100px;
     width: 100%;
-    border: 1px solid rgb(255,210,210); /* 아래쪽 테두리만 표시 */
+    border: 0.5px solid grey; /* 아래쪽 테두리만 표시 */
     resize: none;
 }
 
 .input-content:focus{
     outline:none;
-    border: 1px solid rgb(169,64,64); /* 아래쪽 테두리만 표시 */
+    border: 0.5px solid rgb(156, 26, 171);
 }
 
 .submit-button{
@@ -333,13 +333,13 @@
     background-color: transparent;
     font-size: 13px;
     padding: 5px 15px 5px 15px;
-    background-color: rgb(255,220,220);
+    background-color: rgb(220,220,255);
     border-radius: 10px;
     cursor: pointer;
 }
 
 .submit-button:hover{
-    background-color: rgb(169,64,64)
+    background-color: rgb(150,150,255);
 }
 </style>
   

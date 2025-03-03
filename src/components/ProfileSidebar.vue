@@ -75,7 +75,7 @@
   
   .profile-nav-item:hover,
   .profile-nav-item.active {
-    background-color: rgb(255, 220, 220);
+    background-color: rgb(220, 220, 255);
   }
   </style>
   

@@ -4,10 +4,12 @@ import App from './App.vue'
 import Home from './components/Home.vue'
 import Post from './components/Post.vue'
 import About from './components/About.vue'
+import AddPost from './components/AddPost.vue'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
+  { path: '/addpost', component: AddPost },
   { path: '/posts/:id', component: Post, props: true }  //props로 id번호를 전달
 ]
 

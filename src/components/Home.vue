@@ -12,7 +12,7 @@ const error = ref(null);
 // API에서 데이터 가져오기
 const fetchPosts = async () => {
   try {
-    const response = await axios.get('https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/posts'); // API URL 수정
+    const response = await axios.get('https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/posts'); 
     console.log(response.data);
     posts.value = response.data.map((post) => ({
       id: post.id,
@@ -21,6 +21,8 @@ const fetchPosts = async () => {
       image: post.imageUrl || '/images/placeholder.webp' , // 기본 이미지 제공
       date: post.createdAt.split('T')[0], // 날짜 형식 변환 (YYYY-MM-DD)
       category: post.category,
+      tagNames: post.tagNames,
+      tagColors: post.tagColors,
       author: 'BMC'
     }));
   } catch (err) {

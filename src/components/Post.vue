@@ -111,7 +111,6 @@ const highlightCode = () => {
     color: #333;
     background-color: rgb(255, 255, 255);
     padding: 20px;
-    border-radius: 10px;
   }
   
   .image-container {
@@ -162,7 +161,6 @@ const highlightCode = () => {
   .post-content pre {
     background-color: #f5f5f5;
     padding: 10px;
-    border-radius: 5px;
     overflow-x: auto;
   }
   

@@ -78,7 +78,7 @@ const toggleMobileMenu = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgba(255,255,255,0.85);
   color: #1E2A38;
   padding: 10px 0 10px 0;
   z-index: 10;
@@ -110,7 +110,6 @@ const toggleMobileMenu = () => {
 /* 사이드바 기본 스타일 */
 .sidebar {
   background-color: rgb(245, 245, 255);
-  border-radius: 5px;
   width: 300px;
   min-width: 300px;
 }
@@ -130,7 +129,6 @@ const toggleMobileMenu = () => {
 .content {
   grid-column: 2;
   background-color: #fff;
-  border-radius: 5px;
   flex-grow: 1;
   overflow: auto;
 }

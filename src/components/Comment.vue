@@ -30,7 +30,7 @@
       <div class="comment-form">
         <!-- ✅ 이모지 선택 버튼 -->
         <div style="display: flex; width: 100%;">
-            <div class="profile" style="border: 0.5px solid grey; cursor:pointer;" @click="toggleEmojiPicker">
+            <div class="profile profile-button" style="border: 0.5px solid grey; cursor:pointer;" @click="toggleEmojiPicker">
             {{ newComment.profileEmoji || "😀" }}
             </div>
             <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
@@ -185,6 +185,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
+  .profile-button:hover {
+    background-color: rgb(235,235,255);
+    transition: 0.5s ease;
+  }
+
   .comment:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);

@@ -137,7 +137,6 @@ const syncScroll = (source) => {
   }
 };
 
-// ✅ 코드 블록 하이라이팅 적용
 const highlightCode = () => {
   nextTick(() => {
     document.querySelectorAll("pre code").forEach((block) => {
@@ -145,7 +144,7 @@ const highlightCode = () => {
     });
   });
 };
-// ✅ 초기 마운트 시 높이 조절
+
 onMounted(() => {
 });
 </script>

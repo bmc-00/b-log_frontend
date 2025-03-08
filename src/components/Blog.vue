@@ -29,7 +29,7 @@
 
       <!-- 메인 컨텐츠 -->
       <main class="content">
-        <RouterView/>
+        <RouterView :key="$route.fullPath"/>
       </main>
 
     </div>
@@ -112,6 +112,7 @@ const toggleMobileMenu = () => {
   background-color: rgb(245, 245, 255);
   width: 300px;
   min-width: 300px;
+  overflow: auto;
 }
 
 /* 왼쪽 사이드바 */

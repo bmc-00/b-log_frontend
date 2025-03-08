@@ -10,7 +10,9 @@ const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
   { path: '/addpost', component: AddPost },
-  { path: '/posts/:id', component: Post, props: true }  //props로 id번호를 전달
+  { path: '/posts/:id', component: Post, props: true },
+  { path: '/category/:category', component: Home, props: true }, //category 전달
+  { path: '/tag/:tag', component: Home, props: true } //tag 전달
 ]
 
 const router = createRouter({

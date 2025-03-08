@@ -55,7 +55,7 @@ const fetchImages = async () => {
 
 // ✅ 이미지 선택 시 부모 컴포넌트로 URL 전달
 const selectImage = (imageUrl) => {
-  emit("imageSelected", imageUrl, sasToken.value);
+  emit("imageSelected", imageUrl);
 };
 
 // ✅ 이미지 업로드 기능

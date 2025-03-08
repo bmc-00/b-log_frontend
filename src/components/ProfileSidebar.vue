@@ -55,10 +55,10 @@
 
   const fetchDatas = async () => {
   try {
-    const cat = await axios.get(`http://localhost:8080/api/posts/getcategories`);
+    const cat = await axios.get(`https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/posts/getcategories`);
     categories.value = cat.data;
 
-    const tg = await axios.get(`http://localhost:8080/api/tags`);
+    const tg = await axios.get(`https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/tags`);
     tags.value = tg.data.map((t) => ({
       id: t.id,
       name: t.name,

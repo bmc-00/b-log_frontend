@@ -19,11 +19,11 @@ const fetchPosts = async () => {
   try {
     var response = "";
     if(props.category)
-      response = await axios.get(`http://localhost:8080/api/posts/bycategory?page=${currentPage.value}&size=${paginationSize.value}&category=${props.category}`);
+      response = await axios.get(`https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/posts/bycategory?page=${currentPage.value}&size=${paginationSize.value}&category=${props.category}`);
     else if(props.tag)
-      response = await axios.get(`http://localhost:8080/api/posts/bytag?page=${currentPage.value}&size=${paginationSize.value}&tag=${props.tag}`);
+      response = await axios.get(`https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/posts/bytag?page=${currentPage.value}&size=${paginationSize.value}&tag=${props.tag}`);
     else
-      response = await axios.get(`http://localhost:8080/api/posts?page=${currentPage.value}&size=${paginationSize.value}`);
+      response = await axios.get(`https://bmc-00-d8f2avhzcfa9a2e9.koreacentral-01.azurewebsites.net/api/posts?page=${currentPage.value}&size=${paginationSize.value}`);
     
     if(!maxPaginationSize.value){ //처음 값 초기화
       maxPaginationSize.value = response.data.totalPages;

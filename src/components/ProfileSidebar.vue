@@ -5,7 +5,7 @@
     <div style="font-size: 15px; padding-left:15px; font-weight: 300; padding-bottom: 20px;">BMC의 기술 블로그 </div>
 
     <div class="profile-nav">
-      <RouterLink to="/" class="profile-nav-item" :class="{ active: $route.path === '/' }">
+      <RouterLink to="/" class="profile-nav-item" :class="{ active: $route.path === '/' }" @click="closeSidebar">
         <span class="material-symbols-outlined light">home</span>
         <div style="padding-top:1px;">Home</div>
       </RouterLink>
@@ -17,7 +17,7 @@
         <transition name="slide">
           <div v-if="isCategoryOpen" class="category-dropdown">
             <RouterLink v-for="category in categories" :key="category" :to="`/category/${category}`"
-              class="dropdown-item">－ {{ category }}</RouterLink>
+              class="dropdown-item" @click="closeSidebar">－ {{ category }}</RouterLink>
           </div>
         </transition>
       </div>
@@ -29,12 +29,12 @@
         <transition name="slide">
           <div v-if="isTagOpen" class="tag-dropdown">
             <RouterLink v-for="tag in tags" :key="tag" :to="`/tag/${tag.name}`" class="dropdown-item-tag"
-              :style="{ backgroundColor: tag.color }">{{ tag.name }}</RouterLink>
+              :style="{ backgroundColor: tag.color }" @click="closeSidebar">{{ tag.name }}</RouterLink>
           </div>
         </transition>
       </div>
 
-      <RouterLink to="/about" class="profile-nav-item" :class="{ active: $route.path === '/about' }">
+      <RouterLink to="/about" class="profile-nav-item" :class="{ active: $route.path === '/about' }" @click="closeSidebar">
         <span class="material-symbols-outlined light">info</span>
         <div style="padding-top:1px;">About</div>
       </RouterLink>
@@ -63,9 +63,11 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, defineEmits } from "vue";
 import axios from 'axios';
 import { useRoute } from "vue-router";
+
+const emit = defineEmits();
 
 const fetchDatas = async () => {
   try {
@@ -88,6 +90,11 @@ const categories = ref([]);
 const isCategoryOpen = ref(false);
 const isTagOpen = ref(false);
 const $route = useRoute();
+
+//모바일 메뉴 닫기 신호 보냄
+const closeSidebar = () => {
+  emit('close-sidebar')
+}
 
 onMounted(fetchDatas);
 </script>

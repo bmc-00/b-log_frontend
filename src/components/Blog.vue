@@ -15,7 +15,7 @@
       <div v-if="!isWide && mobileMenuOpen" class="mobile-sidebar-overlay" @click.self="toggleMobileMenu">
         <aside class="sidebar mobile-sidebar">
           <button class="close-btn" @click="toggleMobileMenu">✕</button>
-          <ProfileSidebar />
+          <ProfileSidebar @close-sidebar="toggleMobileMenu" />
         </aside>
       </div>
     </Transition>
@@ -29,7 +29,7 @@
 
       <!-- 메인 컨텐츠 -->
       <main class="content">
-        <RouterView :key="$route.fullPath"/>
+        <RouterView :key="$route.fullPath" />
       </main>
 
     </div>

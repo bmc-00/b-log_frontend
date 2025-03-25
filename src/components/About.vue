@@ -60,7 +60,8 @@
             <div class="timeline-content">
               <h3>서울시립대학교</h3>
               <div class="timeline-subtitle">컴퓨터과학부</div>
-              <p>컴퓨터 과학의 기초를 학습하며 프로그래밍의 이론적 토대를 다졌습니다. 데이터베이스, 알고리즘, 운영체제 등 핵심 과목들을 통해 개발자로서의 기본기를 확립하고, 문제 해결을 위한 효율적인 접근 방식을 배웠습니다.</p>
+              <p>컴퓨터 과학의 기초를 학습하며 프로그래밍의 이론적 토대를 다졌습니다. 데이터베이스, 알고리즘, 운영체제 등 핵심 과목들을 통해 개발자로서의 기본기를 확립하고, 문제 해결을 위한 효율적인
+                접근 방식을 배웠습니다.</p>
             </div>
           </div>
 
@@ -68,7 +69,9 @@
             <div class="timeline-date">2021 - 2023</div>
             <div class="timeline-content">
               <h3>정보체계운영병</h3>
-              <p>IPS(침입 방지 시스템) 관제 업무를 통해 보안의 중요성을 실감하게 되었습니다. 주로 실시간 네트워크 트래픽을 모니터링하고, 이상 징후를 감지하여 신속하게 대응하는 업무를 담당했습니다. 이를 통해 시스템의 안정성을 유지하며, 네트워크 보안에 대한 기본적인 이해를 쌓았습니다. 이 경험은 단순한 보안 대응을 넘어 향후 개발자로서 시스템과 소프트웨어의 안정성을 고려한 개발을 하는 데 도움이 되었습니다.</p>
+              <p>IPS(침입 방지 시스템) 관제 업무를 통해 보안의 중요성을 실감하게 되었습니다. 주로 실시간 네트워크 트래픽을 모니터링하고, 이상 징후를 감지하여 신속하게 대응하는 업무를
+                담당했습니다. 이를 통해 시스템의 안정성을 유지하며, 네트워크 보안에 대한 기본적인 이해를 쌓았습니다. 이 경험은 단순한 보안 대응을 넘어 향후 개발자로서 시스템과 소프트웨어의 안정성을
+                고려한 개발을 하는 데 도움이 되었습니다.</p>
             </div>
           </div>
 
@@ -77,7 +80,9 @@
             <div class="timeline-content">
               <h3>고려대학교</h3>
               <div class="timeline-subtitle">스마트보안학부 | 컴퓨터학과</div>
-              <p>고려대학교에서 보안과 개발을 결합한 전문성을 키우고 있으며, 일상생활에서의 불편함을 해결하는 다양한 소프트웨어를 구상하고 개발하는 데 집중하고 있습니다. 특히, 사용자 중심의 가치 실현을 목표로, 사람들이 겪는 작은 불편함을 해결할 수 있는 앱과 서비스를 설계하고 구현하는 경험을 쌓고 있습니다. 개발 과정에서 시스템 설계와 보안에 대한 깊은 이해를 바탕으로, 기술적 문제를 해결하는 동시에 사용자 경험을 최적화하는 방법을 배워가고 있습니다.</p>
+              <p>고려대학교에서 보안과 개발을 결합한 전문성을 키우고 있으며, 일상생활에서의 불편함을 해결하는 다양한 소프트웨어를 구상하고 개발하는 데 집중하고 있습니다. 특히, 사용자 중심의 가치
+                실현을 목표로, 사람들이 겪는 작은 불편함을 해결할 수 있는 앱과 서비스를 설계하고 구현하는 경험을 쌓고 있습니다. 개발 과정에서 시스템 설계와 보안에 대한 깊은 이해를 바탕으로, 기술적
+                문제를 해결하는 동시에 사용자 경험을 최적화하는 방법을 배워가고 있습니다.</p>
             </div>
           </div>
 
@@ -86,7 +91,9 @@
             <div class="timeline-content">
               <h3>화이트햇스쿨</h3>
               <div class="timeline-subtitle">1기</div>
-              <p>화이트햇스쿨 1기 과정에서는 실습 중심의 보안 교육을 통해 다양한 보안 기술을 심화 학습했습니다. 이 과정에서 웹 애플리케이션 취약점 분석, 모의 해킹, 보안 솔루션 개발 등 다양한 분야에서 실무 경험을 쌓았습니다. 웹 취약점 분석을 통해 SQL 인젝션, XSS, CSRF와 같은 주요 보안 취약점을 탐지하고 대응 방법을 배웠으며, 모의 해킹 실습을 통해 실제 환경에서의 해킹 기법을 체험하고 이를 방어하는 방법을 익혔습니다.</p>
+              <p>화이트햇스쿨 1기 과정에서는 실습 중심의 보안 교육을 통해 다양한 보안 기술을 심화 학습했습니다. 이 과정에서 웹 애플리케이션 취약점 분석, 모의 해킹, 보안 솔루션 개발 등 다양한
+                분야에서 실무 경험을 쌓았습니다. 웹 취약점 분석을 통해 SQL 인젝션, XSS, CSRF와 같은 주요 보안 취약점을 탐지하고 대응 방법을 배웠으며, 모의 해킹 실습을 통해 실제
+                환경에서의 해킹 기법을 체험하고 이를 방어하는 방법을 익혔습니다.</p>
             </div>
           </div>
 
@@ -95,7 +102,10 @@
             <div class="timeline-content">
               <h3>(주)시옷</h3>
               <div class="timeline-subtitle">인턴 사원</div>
-              <p>Hardware Security Module(HSM)의 Abstraction Layer API 개발을 위한 기초 자료를 수집하고, 이를 기반으로 다양한 HSM의 API를 분석, 설계하였습니다. 주요 업무로는 Infineon, NXP, Microchip 등 HSM 제공업체들의 제품을 조사하고, API 문서화 및 데이터 시트를 분석하여 HSM의 기능과 특징을 파악하였습니다. 또한, 다양한 협업 도구(Slack, Jira, Confluence 등)를 활용하여 프로젝트 관리와 협업을 원활히 진행하였습니다. 이를 통해 HSM API 설계에 필요한 기본 개념과 실무 지식을 습득하였습니다.</p>
+              <p>Hardware Security Module(HSM)의 Abstraction Layer API 개발을 위한 기초 자료를 수집하고, 이를 기반으로 다양한 HSM의 API를 분석,
+                설계하였습니다. 주요 업무로는 Infineon, NXP, Microchip 등 HSM 제공업체들의 제품을 조사하고, API 문서화 및 데이터 시트를 분석하여 HSM의 기능과 특징을
+                파악하였습니다. 또한, 다양한 협업 도구(Slack, Jira, Confluence 등)를 활용하여 프로젝트 관리와 협업을 원활히 진행하였습니다. 이를 통해 HSM API 설계에 필요한
+                기본 개념과 실무 지식을 습득하였습니다.</p>
             </div>
           </div>
 
@@ -104,7 +114,9 @@
             <div class="timeline-content">
               <h3>LG CNS</h3>
               <div class="timeline-subtitle">인턴 사원</div>
-              <p>ITO Dashboard 시스템 개발에 참여했습니다. 특정 페이지의 풀 스택 개발을 맡아, 그리드 솔루션 라이브러리 선택과 과제 선정 과정에서 중요한 의사결정을 내렸습니다. 고객사와의 소통을 통해 기능 개선을 이끌어냈고, 시스템의 배포와 운영을 직접 경험하며 실제 운영 환경에서의 문제 해결 능력을 키웠습니다. 또한, 유지보수 측면에서 코드 재사용성을 높이는 방법을 고민하며 성장할 수 있었습니다.</p>
+              <p>ITO Dashboard 시스템 개발에 참여했습니다. 특정 페이지의 풀 스택 개발을 맡아, 그리드 솔루션 라이브러리 선택과 과제 선정 과정에서 중요한 의사결정을 내렸습니다. 고객사와의
+                소통을 통해 기능 개선을 이끌어냈고, 시스템의 배포와 운영을 직접 경험하며 실제 운영 환경에서의 문제 해결 능력을 키웠습니다. 또한, 유지보수 측면에서 코드 재사용성을 높이는 방법을
+                고민하며 성장할 수 있었습니다.</p>
             </div>
           </div>
         </div>
@@ -116,42 +128,87 @@
           <div class="philosophy-item">
             <i class="fas fa-user-shield"></i>
             <h3>보안 중심 설계</h3>
-            <p>보안은 서비스의 신뢰성을 높이는 핵심 요소입니다. 개발 초기 단계부터 보안을 고려한 설계를 지향합니다.</p>
+            <p>보안은 서비스의 신뢰성을 높이는 핵심 요소입니다. 시큐어소프트웨어공학의 기본 원칙으로부터 시작해, Built-in Security를 적용하는 서비스 설계에 초점을 맞추고 있습니다.</p>
           </div>
           <div class="philosophy-item">
             <i class="fas fa-users"></i>
             <h3>사용자 중심 개발</h3>
-            <p>기술은 사용자의 문제를 해결하기 위한 도구입니다. 항상 사용자의 관점에서 생각하고 개발합니다.</p>
+            <p>기술은 사용자의 문제를 해결하기 위한 도구입니다. 기술의 뛰어남도 중요하지만, 항상 사용자의 관점에서 생각하고 개발하려 노력하고 있습니다.</p>
           </div>
           <div class="philosophy-item">
             <i class="fas fa-sync-alt"></i>
             <h3>지속적 학습</h3>
-            <p>새로운 기술과 도전을 두려워하지 않으며, 끊임없는 학습을 통해 성장합니다.</p>
+            <p>새로운 기술과 도전을 두려워하지 않으며, 끊임없는 학습과 경험을 통해 성장하고 싶습니다.</p>
           </div>
         </div>
       </section>
 
       <section class="projects-section">
-        <h2>Projects</h2>
+        <h2>Major Projects</h2>
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-header">
-              <h3>개인 블로그</h3>
-              <span class="project-year">2024</span>
+              <h3>B-Log</h3>
+              <span class="project-year">2025</span>
             </div>
-            <p class="project-desc">Spring Boot와 Vue.js를 활용한 기술 블로그 개발. 데이터 정규화, RESTful API 설계, 사용자 경험 최적화에 중점을 둠.</p>
+            <p class="project-desc">처음부터 모든 블로그 시스템을 기획하고 설계하는 것을 목표로 시작한 프로젝트 입니다. 기본적인 블로그 서비스와 태그, 카테고리, 댓글 등이 포함된 블로그 서비스를 구현했습니다. 추후 지속적으로 업데이트하여 Elasticsearch기반 검색, Redis기반 캐시를 활용한 성능 향상, 인증을 적용한 로그인 기능 등 다양한 기능들을 적용하고자 합니다.</p>
+            <div class="project-tags">
+              <span class="project-tag">Spring boot</span>
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
             <div class="project-links">
-              <a href="https://bmc.monster" target="_blank">Live Demo</a>
+              <a href="https://bmc.monster" target="_blank">Project</a>
               <a href="https://github.com/bmc-00" target="_blank">GitHub</a>
             </div>
           </div>
           <div class="project-card">
             <div class="project-header">
               <h3>Siren</h3>
-              <span class="project-year">2023-현재</span>
+              <span class="project-year">2023</span>
             </div>
-            <p class="project-desc">인디 음악 개발자를 위한 실시간 스트리밍 및 커뮤니티 플랫폼. 라디오 형식의 동시 청취 경험 제공.</p>
-            <span class="project-status">진행중</span>
+            <p class="project-desc">인디 음악 개발자를 위한 실시간 스트리밍 및 커뮤니티 플랫폼입니다. 음악 개발자는 자신의 음악을 업로드할 수 있고, 자동화된 음악 시간표에 따라 자동으로 스트리밍되어 같은 음악의 같은 부분을 들으며 소통할 수 있습니다.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/bmc-00/Siren" target="_blank">GitHub</a>
+              <a href="https://bmc-00.github.io/posts/166" target="_blank">Post</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3>설렘</h3>
+              <span class="project-year">2023</span>
+            </div>
+            <p class="project-desc">서울시 공공데이터에서 제공하는 착한가격업소 데이터를 이용해 주변의 착한가격업소 인증 지점을 찾을 수 있고, 리뷰를 남길 수 있으며, 카카오맵 API를 이용해 현재 위치와 착한가격업소의 위치를 표시할 수 있습니다. 현재는 프록시 서버의 사용 종료와 API키의 만료로 일부 기능만 사용 가능합니다.</p>   
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="https://seouldata.github.io" target="_blank">Demo</a>
+              <a href="https://github.com/bmchun00/seoul_data" target="_blank">GitHub</a>
+              <a href="https://bmc-00.github.io/posts/167" target="_blank">Post</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Playground</h3>
+              <span class="project-year">2023</span>
+            </div>
+            <p class="project-desc">커뮤니티의 장점만을 살리자는 취지로 시작된 프로젝트로, 각 게시글은 다른 사람을 웃게 할 수 있는 내용만을 담아야 합니다. 게시글 좋아요 등의 기능으로 투표를 하여, 매주마다 순위를 공개하고 득표가 많은 사용자에게 선물을 주는 기획으로 시작했습니다.</p> 
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="https://playgroundflutter.github.io" target="_blank">Demo</a>
+              <a href="https://github.com/bmchun00/playground" target="_blank">GitHub</a>
+              <a href="https://bmc-00.github.io/posts/168" target="_blank">Post</a>
+            </div>
           </div>
         </div>
       </section>
@@ -159,17 +216,17 @@
       <section class="contact-section">
         <h2>Contact & Links</h2>
         <div class="contact-grid">
-          <a href="https://github.com/bmchun00" class="contact-card">
+          <a href="https://github.com/bmchun00" target="_blank" class="contact-card">
             <i class="fab fa-github"></i>
             <h3>GitHub (bmchun00)</h3>
             <p>프로젝트와 코드를 확인해보세요</p>
           </a>
-          <a href="https://github.com/bmc-00" class="contact-card">
+          <a href="https://github.com/bmc-00" target="_blank" class="contact-card">
             <i class="fab fa-github"></i>
             <h3>GitHub (bmc-00)</h3>
             <p>프로젝트와 코드를 확인해보세요</p>
           </a>
-          <a href="https://solved.ac/bmchun00" class="contact-card">
+          <a href="https://solved.ac/bmchun00" target="_blank" class="contact-card">
             <i class="fas fa-code"></i>
             <h3>solved.ac</h3>
             <p>알고리즘 문제 해결 기록</p>
@@ -181,18 +238,9 @@
 </template>
 
 <style scoped>
-/* 색상 변수 정의 */
-:root {
-  --primary-color: #6366f1;
-  --primary-light: rgba(99, 102, 241, 0.1);
-  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #818cf8 100%);
-  --bg-light: rgb(248, 248, 252);
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.03);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.05);
+a:visited {
+    color: inherit; /* 부모 요소의 색상을 그대로 유지 */
 }
-
 .biography-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -218,7 +266,8 @@
 .profile-image {
   width: 180px;
   height: 180px;
-  border-radius: 50%; /* 완전한 원형으로 변경 */
+  border-radius: 50%;
+  /* 완전한 원형으로 변경 */
   object-fit: cover;
   border: 3px solid var(--primary-color);
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.15);
@@ -268,10 +317,21 @@
   opacity: 0;
 }
 
-.stat-item:nth-child(1) { animation-delay: 0.5s; }
-.stat-item:nth-child(2) { animation-delay: 0.6s; }
-.stat-item:nth-child(3) { animation-delay: 0.7s; }
-.stat-item:nth-child(4) { animation-delay: 0.8s; }
+.stat-item:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.stat-item:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.stat-item:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.stat-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
 .stat-item i {
   color: var(--primary-color);
@@ -443,14 +503,13 @@
 
 .project-links {
   display: flex;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .project-links a {
+  padding-top: 20px;
   display: inline-block;
-  padding: 0.5rem 1rem;
-  background: var(--primary-light);
-  color: var(--primary-color);
+  color: inherit;
   border-radius: 20px;
   transition: all 0.3s ease;
   font-weight: 500;
@@ -458,29 +517,31 @@
 }
 
 .project-links a:hover {
-  background: var(--primary-color);
-  color: white;
+  color: rgb(220,220,255);
 }
 
-.project-card:nth-child(1) { animation-delay: 0.3s; }
-.project-card:nth-child(2) { animation-delay: 0.5s; }
+.project-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
 
-/* Contact 섹션 개선 */
+.project-card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
 .contact-section {
   padding: 2rem;
   margin: 4rem 0;
 }
-
-a {
-  color: inherit; 
+.contact-section a{
   text-decoration: none;
+  color: black;
 }
 
-a:hover,
-a:focus,
-a:visited {
-  color: inherit;
-  text-decoration: none; 
+.contact-section a:hover,
+.contact-section a:focus,
+.contact-section a:visited {
+  text-decoration: none;
+  color: rgb(170,170,255);
 }
 
 
@@ -526,9 +587,17 @@ a:visited {
   font-size: 16px;
 }
 
-.contact-card:nth-child(1) { animation-delay: 0.4s; }
-.contact-card:nth-child(2) { animation-delay: 0.6s; }
-.contact-card:nth-child(3) { animation-delay: 0.8s; }
+.contact-card:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.contact-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.contact-card:nth-child(3) {
+  animation-delay: 0.8s;
+}
 
 /* 섹션 헤더 개선 */
 h2 {
@@ -557,6 +626,7 @@ h2::after {
 
 /* 반응형 디자인 개선 */
 @media (max-width: 768px) {
+
   .timeline-section,
   .philosophy-section,
   .projects-section,
@@ -639,6 +709,7 @@ h2::after {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -650,20 +721,24 @@ h2::after {
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-.timeline-item, .philosophy-item, .project-card, .contact-card {
+.timeline-item,
+.philosophy-item,
+.project-card,
+.contact-card {
   animation: fadeInUp 0.6s ease forwards;
   opacity: 0;
 }
 
-.timeline-item:nth-child(n), 
-.philosophy-item:nth-child(n), 
-.project-card:nth-child(n), 
+.timeline-item:nth-child(n),
+.philosophy-item:nth-child(n),
+.project-card:nth-child(n),
 .contact-card:nth-child(n) {
   animation-delay: calc(n * 0.1s);
 }
@@ -678,6 +753,20 @@ h2::after {
 .fade-trigger.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.project-tag {
+  background-color: rgb(235,235,255);
+  color: #666;
+  padding: 4px 7px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
 }
 </style>
 
@@ -702,4 +791,3 @@ onMounted(() => {
   });
 });
 </script>
-

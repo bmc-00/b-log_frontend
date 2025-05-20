@@ -111,6 +111,8 @@ const highlightCode = () => {
     color: #333;
     background-color: rgb(255, 255, 255);
     padding: 20px;
+    word-break: break-word; /* 줄바꿈 문제 해결 */
+    overflow-wrap: break-word; 
   }
   
   .image-container {

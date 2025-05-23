@@ -4,6 +4,16 @@
     <div style="font-size: 25px; padding-left:15px; font-weight: 700; padding-top:5px; color: #555;">BMC</div>
     <div style="font-size: 15px; padding-left:15px; font-weight: 300; padding-bottom: 20px;">BMC의 기술 블로그 </div>
 
+    <div style="padding: 0 30px 15px 0;">
+      <input
+      v-model="searchKeyword"
+      @input="onSearchInput"
+      type="text"
+      placeholder="🔍 Search"
+      class="search-bar"
+      />
+    </div>
+
     <div class="profile-nav">
       <RouterLink to="/" class="profile-nav-item" :class="{ active: $route.path === '/' }" @click="closeSidebar">
         <span class="material-symbols-outlined light">home</span>
@@ -63,9 +73,11 @@
 </template>
 
 <script setup>
-import { ref, onMounted, defineEmits } from "vue";
+import { ref, onMounted, defineEmits, watch } from "vue";
 import axios from 'axios';
 import { useRoute } from "vue-router";
+import { useRouter } from 'vue-router';
+import debounce from 'lodash.debounce';
 
 const emit = defineEmits();
 
@@ -90,11 +102,26 @@ const categories = ref([]);
 const isCategoryOpen = ref(false);
 const isTagOpen = ref(false);
 const $route = useRoute();
+const router = useRouter()
+const searchKeyword = ref('')
 
 //모바일 메뉴 닫기 신호 보냄
 const closeSidebar = () => {
   emit('close-sidebar')
 }
+
+const debouncedPush = debounce((kw) => {
+  if (kw.trim()) {
+    router.push({
+      path: '/search',
+      query: { keyword: kw.trim() }
+    })
+  }
+}, 300)
+
+watch(searchKeyword, (newVal) => {
+  debouncedPush(newVal)
+})
 
 onMounted(fetchDatas);
 </script>
@@ -218,5 +245,22 @@ onMounted(fetchDatas);
 
 .icon-link:hover {
   background-color: rgb(200, 200, 255);
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px 15px;
+  font-size: 13px;
+  color: #222;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(250,250,255);
+  border: 0.5px solid rgb(200,200,255);
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: rgb(150,150,255);
+  box-shadow: 0 0 0 2px rgba(123, 102, 255, 0.15);
 }
 </style>

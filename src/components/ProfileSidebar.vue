@@ -116,6 +116,10 @@ const debouncedPush = debounce((kw) => {
       path: '/search',
       query: { keyword: kw.trim() }
     })
+  } else {
+    router.push({
+      path: '/',
+    })
   }
 }, 300)
 
